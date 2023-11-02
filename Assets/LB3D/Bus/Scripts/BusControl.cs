@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using NaughtyAttributes;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,9 +17,10 @@ public class BusControl : MonoBehaviour {
 
     public float OpenCloseSpeed;
 
-    private bool isOpen = false;    
+    private bool isOpen = false;
     
-    public void Open(bool open = true) {
+    public void Open(bool open = true) 
+    {
         string action = "";
         if (open)
         {
@@ -34,14 +36,10 @@ public class BusControl : MonoBehaviour {
         isOpen = !isOpen;
     }
 
-    public void ToggleDoor() {
-        if (isOpen)
-        {
-            Open(false);
-        }
-        else {
-            Open(true);
-        }
+    [Button]
+    public void ToggleDoor()
+    {
+        Open(!isOpen);
     }
 
 }
