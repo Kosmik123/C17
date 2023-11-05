@@ -19,21 +19,19 @@ public class BusControl : MonoBehaviour {
 
     private bool isOpen = false;
     
-    public void Open(bool open = true) 
+    public void Open(bool open = true)
     {
-        string action = "";
-        if (open)
-        {
-            action = "Open";
-        }
-        else {
-            action = "Close";
-        }
+        string action = open ? "Open" : "Close";
+        SetAnimationTriggers(action);
+        isOpen = open;
+    }
+
+    private void SetAnimationTriggers(string action)
+    {
         Door1.SetTrigger(action);
         Door2.SetTrigger(action);
-        StopSign1.SetTrigger(action);  
+        StopSign1.SetTrigger(action);
         StopSign3.SetTrigger(action);
-        isOpen = !isOpen;
     }
 
     [Button]
