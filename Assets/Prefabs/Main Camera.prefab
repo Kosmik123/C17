@@ -42,8 +42,8 @@ ReflectionProbe:
   serializedVersion: 2
   m_Type: 0
   m_Mode: 1
-  m_RefreshMode: 0
-  m_TimeSlicingMode: 0
+  m_RefreshMode: 1
+  m_TimeSlicingMode: 1
   m_Resolution: 128
   m_UpdateFrequency: 0
   m_BoxSize: {x: 30.07, y: 10, z: 30}
@@ -79,6 +79,8 @@ GameObject:
   - component: {fileID: 3287767837955736572}
   - component: {fileID: 3287767837955736573}
   - component: {fileID: 8561780725163909838}
+  - component: {fileID: 3877321881448373760}
+  - component: {fileID: 4363305792726939954}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -262,3 +264,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHeadTag: Player Head
   parentConstraint: {fileID: 3287767837955736575}
+--- !u!114 &3877321881448373760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3287767837955736571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af06866b646eb954e9207ba2be3efcd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayProvider: {fileID: 4363305792726939954}
+  raycastedLayers:
+    serializedVersion: 2
+    m_Bits: 4097
+  raycastDistance: 3
+  currentTarget: {fileID: 0}
+--- !u!114 &4363305792726939954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3287767837955736571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a67921f23930c0143b9a3a8bf1bdde0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
