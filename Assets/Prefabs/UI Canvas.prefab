@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 8, y: 8}
+  m_SizeDelta: {x: 12, y: 12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5855561529137157475
 CanvasRenderer:
@@ -58,14 +58,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -153,6 +153,7 @@ GameObject:
   - component: {fileID: 5560266968637104140}
   - component: {fileID: 6986996827084905621}
   - component: {fileID: 7516775684284189998}
+  - component: {fileID: 5576183377447537407}
   m_Layer: 5
   m_Name: UI Canvas
   m_TagString: Untagged
@@ -243,6 +244,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5576183377447537407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298463009375055285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d1120491c4b48b4d85028fcd9281330, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactor: {fileID: 0}
+  objectNameDisplay: {fileID: 2014194760128999951}
+  hintDisplays: []
 --- !u!1 &6925152300389556206
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +270,7 @@ GameObject:
   - component: {fileID: 3014389733599951713}
   - component: {fileID: 6721089209896887023}
   - component: {fileID: 5210698073467527186}
+  - component: {fileID: 2014194760128999951}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -379,3 +396,16 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &2014194760128999951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6925152300389556206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7028c321e94af649bdb07abf1f1fbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHint: {fileID: 0}

@@ -76,11 +76,11 @@ GameObject:
   - component: {fileID: 3287767837955736569}
   - component: {fileID: 3287767837955736568}
   - component: {fileID: 3287767837955736575}
-  - component: {fileID: 3287767837955736572}
   - component: {fileID: 3287767837955736573}
   - component: {fileID: 8561780725163909838}
   - component: {fileID: 3877321881448373760}
   - component: {fileID: 4363305792726939954}
+  - component: {fileID: 2898675137205783569}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -176,20 +176,6 @@ ParentConstraint:
   m_IsContraintActive: 1
   m_IsLocked: 1
   m_Sources: []
---- !u!114 &3287767837955736572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3287767837955736571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d25d0f2056856804cafa280da85488f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  visible: 0
-  cursorLockMode: 1
 --- !u!114 &3287767837955736573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,3 +280,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a67921f23930c0143b9a3a8bf1bdde0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2898675137205783569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3287767837955736571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d25d0f2056856804cafa280da85488f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visible: 0
+  cursorLockMode: 1
